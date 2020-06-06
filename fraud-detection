@@ -1,7 +1,7 @@
 import pandas as pd
 
 #loading up data
-df = pd.read_csv('data\fraud_data.csv')
+df = pd.read_csv('fraud_data.csv')
 
 #Fraud Percentage
 print('Fraud Percentage: {}'.format(df['Class'].value_counts()[1]/(df['Class'].value_counts()[0]+df['Class'].value_counts()[1])))
